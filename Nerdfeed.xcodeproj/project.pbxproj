@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		050604E11A6B10BE00B6639D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 050604E01A6B10BE00B6639D /* main.m */; };
 		050604E41A6B10BE00B6639D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 050604E31A6B10BE00B6639D /* AppDelegate.m */; };
-		050604E71A6B10BE00B6639D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050604E61A6B10BE00B6639D /* ViewController.m */; };
-		050604EA1A6B10BE00B6639D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050604E81A6B10BE00B6639D /* Main.storyboard */; };
 		050604EC1A6B10BE00B6639D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050604EB1A6B10BE00B6639D /* Images.xcassets */; };
-		050604EF1A6B10BE00B6639D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 050604ED1A6B10BE00B6639D /* LaunchScreen.xib */; };
 		050604FB1A6B10BE00B6639D /* NerdfeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 050604FA1A6B10BE00B6639D /* NerdfeedTests.m */; };
+		050605061A6B119A00B6639D /* CoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050605051A6B119A00B6639D /* CoursesViewController.m */; };
+		050605091A6B21D500B6639D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050605081A6B21D500B6639D /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +31,14 @@
 		050604E01A6B10BE00B6639D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		050604E21A6B10BE00B6639D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		050604E31A6B10BE00B6639D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		050604E51A6B10BE00B6639D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		050604E61A6B10BE00B6639D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		050604E91A6B10BE00B6639D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		050604EB1A6B10BE00B6639D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		050604EE1A6B10BE00B6639D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		050604F41A6B10BE00B6639D /* NerdfeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NerdfeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		050604F91A6B10BE00B6639D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		050604FA1A6B10BE00B6639D /* NerdfeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NerdfeedTests.m; sourceTree = "<group>"; };
+		050605041A6B119A00B6639D /* CoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesViewController.h; sourceTree = "<group>"; };
+		050605051A6B119A00B6639D /* CoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesViewController.m; sourceTree = "<group>"; };
+		050605071A6B21D500B6639D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		050605081A6B21D500B6639D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +82,11 @@
 			children = (
 				050604E21A6B10BE00B6639D /* AppDelegate.h */,
 				050604E31A6B10BE00B6639D /* AppDelegate.m */,
-				050604E51A6B10BE00B6639D /* ViewController.h */,
-				050604E61A6B10BE00B6639D /* ViewController.m */,
-				050604E81A6B10BE00B6639D /* Main.storyboard */,
+				050605041A6B119A00B6639D /* CoursesViewController.h */,
+				050605051A6B119A00B6639D /* CoursesViewController.m */,
+				050605071A6B21D500B6639D /* WebViewController.h */,
+				050605081A6B21D500B6639D /* WebViewController.m */,
 				050604EB1A6B10BE00B6639D /* Images.xcassets */,
-				050604ED1A6B10BE00B6639D /* LaunchScreen.xib */,
 				050604DE1A6B10BE00B6639D /* Supporting Files */,
 			);
 			path = Nerdfeed;
@@ -199,8 +198,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				050604EA1A6B10BE00B6639D /* Main.storyboard in Resources */,
-				050604EF1A6B10BE00B6639D /* LaunchScreen.xib in Resources */,
 				050604EC1A6B10BE00B6639D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				050604E71A6B10BE00B6639D /* ViewController.m in Sources */,
 				050604E41A6B10BE00B6639D /* AppDelegate.m in Sources */,
+				050605061A6B119A00B6639D /* CoursesViewController.m in Sources */,
 				050604E11A6B10BE00B6639D /* main.m in Sources */,
+				050605091A6B21D500B6639D /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,25 +240,6 @@
 			targetProxy = 050604F51A6B10BE00B6639D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		050604E81A6B10BE00B6639D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				050604E91A6B10BE00B6639D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		050604ED1A6B10BE00B6639D /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				050604EE1A6B10BE00B6639D /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		050604FC1A6B10BE00B6639D /* Debug */ = {
@@ -348,6 +327,7 @@
 				INFOPLIST_FILE = Nerdfeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -358,6 +338,7 @@
 				INFOPLIST_FILE = Nerdfeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

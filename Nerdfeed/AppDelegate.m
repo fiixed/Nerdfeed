@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "CoursesViewController.h"
+#import "WebViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +17,22 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    CoursesViewController *cvc = [[CoursesViewController alloc] initWithStyle:UITableViewStylePlain];
+    
+    UINavigationController *masterNav = [[UINavigationController alloc] initWithRootViewController:cvc];
+    
+    WebViewController *wvc = [[WebViewController alloc] init];
+    cvc.webViewController = wvc;
+    
+    self.window.rootViewController = masterNav;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
