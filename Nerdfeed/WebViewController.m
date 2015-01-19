@@ -64,6 +64,25 @@
     }
 }
 
+- (void)splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)pc
+{
+    // If the barbuttonitem does not have a title, it will not appear at all
+    
+    barButtonItem.title = @"Courses";
+    
+    // Take this barbuttonitem and put it on the left side of the nav item
+    self.navigationItem.leftBarButtonItem = barButtonItem;
+}
+
+- (void)splitViewController:(UISplitViewController *)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+    // Remove the bar button item from the navigation item
+    // Double check that it is the correct button, even though we know it is
+    if (barButtonItem == self.navigationItem.leftBarButtonItem) {
+        self.navigationItem.backBarButtonItem = nil;
+    }
+}
+
 
 
 @end
